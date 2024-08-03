@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Weather App Sandbox</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="weather-app">
+        <header>
+            <form id="search-form">
+                <div class="container">
+                    <input type="search" placeholder="Enter a city..." required class="input-box" id="search-input">
+                    <input class="searchbox" type="submit" value="Search">
+                </div>
+            </form>
+        </header>
+        <main>
+            <div class="current-weather">
+                <div>
+                    <h1 class="city" id="current-city"> New York</h1>
+                    <p class="city-temp"><span id="current-date"></span> , mix of sun & clouds</br>
+                        Humidity: <strong>45%</strong>, Wind: <strong>14.31km/h</strong></p>
+                </div>
+                <div class="current-temp">
+                    <span class="current-temp-icon"> 🌤️ </span>
+                    <span class="current-temp-number" id="current-temperature"> 74 </span>
+                    <span class="current-temp-degrees"> ℉ </span>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <p>The project was coded by <a href="https://www.shecodes.io/graduates/65559-nia-morgan" target=" blank">
+                    Nia Morgan</a> and is open-sourced on <a href="https://github.com/" target="blank">GitHub</a> and
+                hosted
+                on
+                <a href="https://www.netlify.com/?qgad=669861900644&qgterm=netlify&utm_source=google&utm_term=netlify&utm_campaign=GS_Connect:+Netlify+Brand&utm_medium=paid_search&hsa_acc=3888979506&hsa_cam=20355763121&hsa_grp=154990107550&hsa_ad=669861900644&hsa_src=g&hsa_tgt=kwd-309804753741&hsa_kw=netlify&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf1r9N6grDc_5pH2P1JXjRJNC1VHcFBSzkNPGcFjfk1YKcjL1hsWusMaAhh4EALw_wcB"
+                    target="blank">Netlify</a>
+            </p>
+        </footer>
+    </div>
+    <script src="src/script.js"></script>
+
+</body>
+
+</html>
